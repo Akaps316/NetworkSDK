@@ -37,8 +37,8 @@ public class NetworkSDK {
 }
 
 public struct Movie: Codable {
-    let title: String
-    let overview: String
+    public let title: String
+    public let overview: String
 }
 
 public struct MoviesResponse: Codable {

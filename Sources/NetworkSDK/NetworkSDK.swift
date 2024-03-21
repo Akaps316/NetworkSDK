@@ -43,15 +43,15 @@ public class NetworkSDK {
         }
     }
     
-    func fetchLatestMovies(completion: @escaping (Movie?, Error?) -> Void) {
+    public func fetchLatestMovies(completion: @escaping (Movie?, Error?) -> Void) {
         fetchData(for: .latestMovies, completion: completion)
     }
     
-    func fetchPopularMovies(completion: @escaping (MovieResponse?, Error?) -> Void) {
+    public func fetchPopularMovies(completion: @escaping (MovieResponse?, Error?) -> Void) {
         fetchData(for: .popularMovies, completion: completion)
     }
     
-    func fetchMovieDetail(for movieId: Int, completion: @escaping (Movie?, Error?) -> Void) {
+    public func fetchMovieDetail(for movieId: Int, completion: @escaping (Movie?, Error?) -> Void) {
         fetchData(for: .movieDetail(movieId: movieId)) { (movie: Movie?, error: Error?) in
             completion(movie, error)
         }

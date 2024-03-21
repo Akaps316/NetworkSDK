@@ -3,7 +3,7 @@
 import Foundation
 
 public class NetworkSDK {
-    static let shared = NetworkSDK()
+    public static let shared = NetworkSDK()
     
     private var apiKey = "909594533c98883408adef5d56143539"
     private var baseURL = "https://api.themoviedb.org/3"

@@ -87,7 +87,7 @@ public class NetworkSDK {
     }
 }
 
-public struct Movie: Decodable {
+public struct Movie: Decodable, Identifiable {
     public let id: Int
     public let title: String
     public let overview: String
